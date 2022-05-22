@@ -72,7 +72,11 @@ public class Walkimg_KAI : MonoBehaviour
             transform.Translate(0, 0, -0.0005f);
             kai.Play("Walk In Place");
         }
-
+        else if(Input.GetKey(KeyCode.E))
+        {
+            Debug.Log("E");
+            kai.Play("Eat");
+        }
         else
         {
             Debug.Log("");
